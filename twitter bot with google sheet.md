@@ -30,7 +30,7 @@ Go to [Twitter](https://twitter.com/) and sign up for a new account. You can alw
 
 You’ll need to verify your email address and a mobile phone number. This is a pain, but it’s what Twitter requires now. If you already have a mobile number associated with a different Twitter account, you’ll have to disconnect that one first. You can always re-arrange those associations later, but the bot account does need to have a mobile number while you’re setting it up. Enter your account name in your Spreadsheet under Step 1.
 
-***insert Join twitter PIC***
+![Join twitter](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Join%20twitter.png)
 
 **2. Create a Twitter App for your Bot**
 
@@ -38,7 +38,7 @@ This application (“app”) is the method that your spreadsheet will use to tal
 
 Go to [Twitter Apps](apps.twitter.com) and hit the “Create New App” button there. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The app’s name needs to be unique, so you can name it the same it based on your bot. Leave the “Callback” field blank for now. If you get an Error message saying that you must first add a mobile phone number to your profile, then you should do that now.
 
-***insert create application pic*** 
+![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Create%20an%20application.png)
 
 **3. Complete App Setup and Enter Keys into the Spreadsheet**
 
@@ -48,7 +48,8 @@ Under the Keys and Access Tokens tab, use the button to “Create my access toke
 
 Then, copy and paste the Consumer Key (API Key) and Consumer Secret (API Secret) from that tab into the green cells under Step 3 in your spreadsheet. (Note: The Consumer Key and Secret are not the same thing as the Access Token and Access Secret.)
 
-***insert another bot and customer key pic***
+
+![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Customer%20Key.png)
 
 **4. Locate your Google Spreadsheet’s “Project Key”**
 
