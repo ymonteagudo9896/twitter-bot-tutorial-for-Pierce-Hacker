@@ -19,7 +19,7 @@ Here is a link to five key takeaways from [Pew Research](https://www.pewresearch
 
 [Pew Research](https://www.pewresearch.org/fact-tank/2018/04/09/5-things-to-know-about-bots-on-twitter/).
 
-##**General Setup Instructions**
+## General Setup Instructions
 The following steps are general for any type of bot you want to create. To get started, make a copy of this [Zach's spreadsheet](https://docs.google.com/spreadsheets/d/1Cbg_6pYN04XtDHpDLtxAP3ExQEBL8PYBXBQ1E5_Sq30/copy), then proceed through the steps below.
 ## Tutorial
  >**I recommend that you create a separate [Gmail](Gmail.com) account for your bot so you can have everything apart from your personal account.**
