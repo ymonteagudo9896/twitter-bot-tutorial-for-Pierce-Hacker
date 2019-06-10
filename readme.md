@@ -1,1 +1,1 @@
-twitter bot tutorial for Pierce-Hacker For an ENG 102 class
+twitter bot tutorial for Pierce-Hacker For Pierce Students
