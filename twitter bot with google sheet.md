@@ -42,7 +42,11 @@ Enter your account name in your Google sheet under Step 1. Google sheets will au
 
 **3. Apply for a Twitter developer account**
 
-Go to [Twitter Apps](https://twitter.com/login?redirect_after_login=https%3A%2F%2Fdeveloper.twitter.com%2Fapps) click on the "Create App". You will have a pop-up asking you to apply for a developer account, go ahead and apply. The next page you'll be asked to select a primary use for your Twitter API, you can only select one. I would just select "Student" then click next. On this step is when you'll need to add a cell phone number, after verifying your number type in the code that was texted to you. You will be asked **"What country do you live in?"** and **"What would you like us to call you?"** you can select what ever you like.
+Go to [Twitter Apps](https://twitter.com/login?redirect_after_login=https%3A%2F%2Fdeveloper.twitter.com%2Fapps) click on the "Create App". You will have a pop-up asking you to apply for a developer account, go ahead and apply. 
+
+[Create twitter app](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/create%20twitter%20app.jpg)
+
+The next page you'll be asked to select a primary use for your Twitter API, you can only select one. I would just select "Student" then click next. On this step is when you'll need to add a cell phone number, after verifying your number type in the code that was texted to you. You will be asked **"What country do you live in?"** and **"What would you like us to call you?"** you can select what ever you like.
 
 Next you'll be asked **"How will you use the Twitter API or Twitter data?"**. You will have to type in a minimum of 200 characters in this box. For **"The specifics"** part select NO for "Are you planning to analyze Twitter data?", Yes for **"Will your app use Tweet, Retweet, like, follow, or Direct Message functionality?**" and just copy and paste the same thing you wrote in the first block, and select no for the last tow question and click next.
 
