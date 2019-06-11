@@ -38,7 +38,7 @@ After you click on the "Sign up" tab it will ask you add a phone number, you can
 
 Enter your account name in your Google sheet under Step 1. Google sheets will automatically save so you don't have to do anything else.
 
-![Google Sheet]
+![Google Sheet](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Adding%20twitter%20name.jpg)
 
 **3. Apply for a Twitter developer account**
 
@@ -50,7 +50,7 @@ The last step will be is to verify that everything you just did looks correct, i
 
 >You Will get an email requesting you to confirm you email address. After confirming it might take some time until you're able to create an app. 
 
-**3. Create a Twitter App for your Bot**
+**4. Create a Twitter App for your Bot**
 
 This application (“app”) is the method that your spreadsheet will use to talk to Twitter. Its possible to use Apps for multiple bots or accounts — in fact, this is how they’re designed — but I like to make one for each bot account so that if one gets suspended the others aren’t necessarily in jeopardy at the same time.
 
@@ -58,7 +58,7 @@ Go to [Twitter Apps](apps.twitter.com) and hit the “Create New App” button t
 
 ![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Create%20an%20application.png)
 
-**4. Complete App Setup and Enter Keys into the Spreadsheet**
+**5. Complete App Setup and Enter Keys into the Spreadsheet**
 
 You App has four tabs: Details, Settings, Keys and Access Tokens, and Permissions. Under Details, make sure that the app’s access level is set to “Read and Write," and if not, change that under the Permissions tab.
 
@@ -69,13 +69,13 @@ Then, copy and paste the Consumer Key (API Key) and Consumer Secret (API Secret)
 
 ![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Customer%20Key.png)
 
-**5. Locate your Google Spreadsheet’s “Project Key”**
+**6. Locate your Google Spreadsheet’s “Project Key”**
 
 This is your spreadsheet’s unique ID within Google. To find yours, first open “Tools-> Script Editor…” to bring up the Script Editor. In the Script Editor, open “File-> Project Properties," and locate your “Project key” in the table that you’ll see there. Copy and paste that Project key into the green cell under Step 4.
 
 ***insert callback url pic***
 
-**6. Add “Callback” Value to Twitter App**
+**7. Add “Callback” Value to Twitter App**
 
 After completing Step 4, the red cell under Step 5 should automatically change to include your Project key as part of a URL. If not, or if you accidentally delete it, the URL follows a simple formula:
 
@@ -83,7 +83,7 @@ After completing Step 4, the red cell under Step 5 should automatically change t
 
 Go back to your Twitter app’s Settings tab and paste that URL into “Callback URL” field.
 
-**7. Select a Data Sheet and Generate a Preview of its Output**
+**8. Select a Data Sheet and Generate a Preview of its Output**
 
 Select a data sheet from the drop down under Step 6, and from the “Bot” menu in your Spreadsheet, select “Generate Preview”. (Each of the four options has specific setup instructions below, but they’re all pre-populated with sample content for this setup step.)
 
@@ -91,17 +91,17 @@ Switch to the “Preview Output” sheet to see 15 sample tweets generated from 
 
 ***insert preview output***
 
-**8. Test Twitter Authorization**
+**9. Test Twitter Authorization**
 
 You’re almost done! From the “Bot” menu above, select “Send a Test Tweet”. If everything has been set up correctly, you should see a pop up inviting you to authenticate your app with your Twitter account. Its pretty easy. Follow the link, click authorize, then close the new tab when it says. “Success!”
 
 Re-run Send a Test Tweet, and check your time line. Hopefully it worked!
 
-**9. Set Post Timing**
+**10. Set Post Timing**
 
 Decide how often you want your bot posting, and select an option from the drop down under Step 8. Unfortunately, these are the only options, and the actually timing is to some extent subject to Google’s whims. You won’t, for example, be able to specify your bot to post at exactly 10:34 every day.
 
-**10. Start it up!**
+**11. Start it up!**
 
 If everything has gone well so far and your data sheet is populated with your content, then your ready to start sending out tweets. Select “Start Posting Tweets” from the Bot menu in your spreadsheet. If ever you decide to stop your bot, then use the “Stop Posting Tweets” option under the Bot menu.
 
