@@ -44,23 +44,33 @@ Enter your account name in your Google sheet under Step 1. Google sheets will au
 
 Go to [Twitter Apps](https://twitter.com/login?redirect_after_login=https%3A%2F%2Fdeveloper.twitter.com%2Fapps) click on the "Create App". You will have a pop-up asking you to apply for a developer account, go ahead and apply. 
 
-[Create twitter app](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/create%20twitter%20app.jpg)
+![Create twitter app](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/create%20twitter%20app.jpg)
+
+![Developer](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/developer%20popup.jpg)
 
 The next page you'll be asked to select a primary use for your Twitter API, you can only select one. I would just select "Student" then click next. On this step is when you'll need to add a cell phone number, after verifying your number type in the code that was texted to you. You will be asked **"What country do you live in?"** and **"What would you like us to call you?"** you can select what ever you like.
 
+
+
 Next you'll be asked **"How will you use the Twitter API or Twitter data?"**. You will have to type in a minimum of 200 characters in this box. For **"The specifics"** part select NO for "Are you planning to analyze Twitter data?", Yes for **"Will your app use Tweet, Retweet, like, follow, or Direct Message functionality?**" and just copy and paste the same thing you wrote in the first block, and select no for the last tow question and click next.
 
-The last step will be is to verify that everything you just did looks correct, if not just click on the back tab at the bottom and make the needed corrections. If everything is good click on **"Looks Good"** and accept the **"Terms"** and **"Submit"** the application.
+![How will you use](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/How%20will%20use.jpg)
 
->You Will get an email requesting you to confirm you email address. After confirming it might take some time until you're able to create an app. 
+![Specifics](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Specifics.jpg)
+
+The last step will be is to verify that everything you just did looks correct click **Next**, if not just click on the back tab at the bottom and make the needed corrections. If everything is good click on **"Looks Good"** and accept the **"Terms"** and **"Submit"** the application.
+
+![Confirm account](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Conferm%20account.jpg)
+
+>You Will get an email requesting you to confirm you email address. After confirming it might take some time until you're able to create an app. So just keep checking th Bots emial accout. 
 
 **4. Create a Twitter App for your Bot**
 
 This application (“app”) is the method that your spreadsheet will use to talk to Twitter. Its possible to use Apps for multiple bots or accounts — in fact, this is how they’re designed — but I like to make one for each bot account so that if one gets suspended the others aren’t necessarily in jeopardy at the same time.
 
-Go to [Twitter Apps](apps.twitter.com) and hit the “Create New App” button there. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The app’s name needs to be unique, so you can name it the same it based on your bot. Leave the “Callback” field blank for now. If you get an Error message saying that you must first add a mobile phone number to your profile, then you should do that now.
+Go to [Twitter Apps](https://developer.twitter.com/en/apps) and hit the “Create New App” button there. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The app’s name needs to be unique, so you can name it the same it based on your bot. Leave the “Callback” field blank for now. If you get an Error message saying that you must first add a mobile phone number to your profile, then you should do that now.
 
-![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Create%20an%20application.png)
+![Create twitter app](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/create%20twitter%20app.jpg)
 
 **5. Complete App Setup and Enter Keys into the Spreadsheet**
 
@@ -69,7 +79,6 @@ You App has four tabs: Details, Settings, Keys and Access Tokens, and Permission
 Under the Keys and Access Tokens tab, use the button to “Create my access token.” This will authorize your app to interface with your account. (I know, it seems redundant.)
 
 Then, copy and paste the Consumer Key (API Key) and Consumer Secret (API Secret) from that tab into the green cells under Step 3 in your spreadsheet. (Note: The Consumer Key and Secret are not the same thing as the Access Token and Access Secret.)
-
 
 ![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Customer%20Key.png)
 
