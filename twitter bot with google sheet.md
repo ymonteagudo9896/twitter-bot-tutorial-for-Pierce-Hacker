@@ -149,7 +149,7 @@ At this point you’ll get a pop-up saying **App isn’t verified** just click o
 
 You’re almost done! From the **“Bot”** menu above, select **“Send a Test Tweet”**. If everything has been set up correctly, you should see a pop up inviting you to authenticate your app with your Twitter account. It’s pretty easy. Follow the link, click **authorize**, then close the new tab when it says. “Success!”
 
-![Test tweet](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/send%20test%20tweet.png)
+![send test tweet](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/send%20test%20tweet.png)
 
 ![send test tweet pop up](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/send%20test%20tweet%20popup.png)
 
@@ -179,3 +179,4 @@ You can change the data sheet selection and edit the data sheet contents without
 ![Columns](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/columns.png)
 
 It will simply use the updated setting whenever it next attempts to send a tweet. You will, however, have to stop and restart the posting if you want to change the timing.
+
