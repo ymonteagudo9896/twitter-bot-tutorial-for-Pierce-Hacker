@@ -15,8 +15,6 @@ Here is a link to five key takeaways from [Pew Research](https://www.pewresearch
 ## References
 [Zach Whalen spreadsheet](http://www.zachwhalen.net/posts/how-to-make-a-twitter-bot-with-google-spreadsheets-version-04/)
 
-[How to Write your own Twitter Bots without Code - Digital Inspiration](https://www.labnol.org/internet/write-twitter-bot/27902/)
-
 [Pew Research](https://www.pewresearch.org/fact-tank/2018/04/09/5-things-to-know-about-bots-on-twitter/).
 
 ## General Setup Instructions
