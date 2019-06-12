@@ -49,11 +49,11 @@ Go to [Twitter Apps](https://twitter.com/login?redirect_after_login=https%3A%2F%
 
 ![Developer](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/developer%20popup.jpg)
 
-The next page you'll be asked to select a primary use for your Twitter API, you can only select one. I would just select "Student" then click next. On this step is when you'll need to add a cell phone number, after verifying your number type in the code that was texted to you. You will be asked **"What country do you live in?"** and **"What would you like us to call you?"** you can select what ever you like.
+The next page you'll be asked to select a primary use for your Twitter API, you can only select one. I would just select "Student" then click next. On this step is when you'll need to add a cell phone number, after verifying your number type in the code that was texted to you. You will be asked **"What country do you live in?"** and **"What would you like us to call you?"** you can select whatever you like.
 
 
 
-Next you'll be asked **"How will you use the Twitter API or Twitter data?"**. You will have to type in a minimum of 200 characters in this box. For **"The specifics"** part select NO for "Are you planning to analyze Twitter data?", Yes for **"Will your app use Tweet, Retweet, like, follow, or Direct Message functionality?**" and just copy and paste the same thing you wrote in the first block, and select no for the last tow question and click next.
+Next you'll be asked **"How will you use the Twitter API or Twitter data?"**. You will have to type in a minimum of 200 characters in this box. For **"The specifics"** part select NO for "Are you planning to analyze Twitter data?", Yes for **"Will your app use Tweet, Retweet, like, follow, or Direct Message functionality?**" and just copy and paste the same thing you wrote in the first block, and select no for the last two question and click next.
 
 ![How will you use](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/How%20will%20use.jpg)
 
@@ -63,19 +63,19 @@ The last step will be is to verify that everything you just did looks correct cl
 
 ![Confirm account](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Conferm%20account.jpg)
 
->You Will get an email requesting you to confirm you email address. After confirming it might take some time until you're able to create an app. So just keep checking th Bots emial accout. 
+>You will get an email requesting you to confirm you email address. After confirming it might take some time until you're able to create an app. So just keep checking the Bots email account. 
 
 **4. Create a Twitter App for your Bot**
 
-This application (“app”) is the method that your spreadsheet will use to talk to Twitter. Its possible to use Apps for multiple bots or accounts — in fact, this is how they’re designed — but I like to make one for each bot account so that if one gets suspended the others aren’t necessarily in jeopardy at the same time.
+This application (“app”) is the method that your spreadsheet will use to talk to Twitter. It’s possible to use Apps for multiple bots or accounts — in fact, this is how they’re designed — but I like to make one for each bot account so that if one gets suspended the others aren’t necessarily in jeopardy at the same time.
 
-Go to [Twitter Apps](https://developer.twitter.com/en/apps) and hit the “Create New App” button there. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The **App’s name** needs to be unique, so you can name it the same it based on your bot's name, but if you get an error saying that name has bee taken just change it. In the **App discription** just type a short explination of your bot. For the **Website URL** you can use your bots name and just add a ".com" at the end. Leave the **Enable sign in** the box unchecked for now. Leave the **“Callback”** field blank for now.
+Go to [Twitter Apps](https://developer.twitter.com/en/apps) and hit the “Create New App” button. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The **App’s name** needs to be unique, so you can name it the same it based on your bot's name, but if you get an error saying that name has been taken just change it. In the **App description** just type a short explanation of your bot. For the **Website URL** you can use your bots name and just add a ".com" at the end. Leave the **Enable sign in** the box unchecked for now and leave the **“Callback”** field blank for now.
 
 ![Create twitter app](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/create%20twitter%20app.jpg)
 
 ![App details](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/App%20details.png)
 
-You can leave all the other **URLs** blank because its not requiered. For the **Tell us how this app will be used** you can use the same discription that you used before. After that click **Create**.
+You can leave all the other **URLs** blank because it’s not required. For the **Tell us how this app will be used** you can use the same description that you used before. After that click **Create**.
 
 ![Tell us how](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/tell%20us%20how.png)
 
@@ -91,7 +91,7 @@ You App has four tabs: **APP Details, Keys and Access Tokens, and Permissions**.
 
 Under the Keys and Access Tokens tab, use the button to “**Generate”** This will authorize your app to interface with your account. (I know, it seems redundant.)
 
-![pKey and token](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/keys%20and%20token.png)
+![Key and token](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/keys%20and%20token.png)
 
 Then, copy and paste the Consumer Key (API Key) and Consumer Secret (API Secret) from that tab into the green cells under Step 3 in your spreadsheet. 
  
@@ -127,7 +127,7 @@ Go back to your Twitter **App's Detail** tab click edit and paste that URL into 
 
 **8. Select a Data Sheet and Generate a Preview of its Output**
 
-Select a data sheet from the drop down under Step 6, it would be best to **Select from Columns or Rows** for now. If you leave it on **ebooks** you will have a connect issue.
+Select a data sheet from the drop down under Step 6, it would be best to **Select from Columns or Rows** for now. If you leave it on **eBooks** you will have a connect issue.
 
 ![Step 6](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/step%206.jpg)
 
@@ -143,22 +143,41 @@ Generating this preview will require you to authorize the scripts in this spread
 
 ![Authorization](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Authorization.png)
 
-At this point youll get a pop-up saying **App isnt verified** justr click on **Advance** and the on **Go to Copy of Bot (unsafe)** and on the next pop-up **Allow**. Don't worry you computer will not blow up on you.It is need so the spreadsheet can talk to your twitter bot.
+At this point you’ll get a pop-up saying **App isn’t verified** just click on **Advance** and the on **Go to Copy of Bot (unsafe)** and on the next pop-up **Allow**. Don't worry your computer will not blow up on you. It is need so the spreadsheet can talk to your twitter bot.
 
 ![Warning](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/waring.png) 
 
 **9. Test Twitter Authorization**
 
-You’re almost done! From the “Bot” menu above, select “Send a Test Tweet”. If everything has been set up correctly, you should see a pop up inviting you to authenticate your app with your Twitter account. Its pretty easy. Follow the link, click authorize, then close the new tab when it says. “Success!”
+You’re almost done! From the **“Bot”** menu above, select **“Send a Test Tweet”**. If everything has been set up correctly, you should see a pop up inviting you to authenticate your app with your Twitter account. It’s pretty easy. Follow the link, click **authorize**, then close the new tab when it says. “Success!”
+
+![Test tweet](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/send%20test%20tweet.png)
+
+![send test tweet pop up](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/send%20test%20tweet%20popup.png)
+
+![Twitter authorization](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/twitter%20authorization.png)
 
 Re-run Send a Test Tweet, and check your time line. Hopefully it worked!
+
+![Twitter bot working](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/twitter%20bot%20working.png)
 
 **10. Set Post Timing**
 
 Decide how often you want your bot posting, and select an option from the drop down under Step 8. Unfortunately, these are the only options, and the actually timing is to some extent subject to Google’s whims. You won’t, for example, be able to specify your bot to post at exactly 10:34 every day.
 
+![Step 8](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/step%208.png)
+
 **11. Start it up!**
 
-If everything has gone well so far and your data sheet is populated with your content, then your ready to start sending out tweets. Select “Start Posting Tweets” from the Bot menu in your spreadsheet. If ever you decide to stop your bot, then use the “Stop Posting Tweets” option under the Bot menu.
+If everything has gone well so far and your data sheet is populated with your content, then you’re ready to start sending out tweets. Select “Start Posting Tweets” from the Bot menu in your spreadsheet. If ever you decide to stop your bot, then use the “Stop Posting Tweets” option under the Bot menu.
 
-You can change the data sheet selection and edit the data sheet contents without stopping the tweeting. It will simply use the updated setting whenever it next attempts to send a tweet. You will, however, have to stop and restart the posting if you want to change the timing.
+![Start tweeting](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/start%20posting.png)
+
+
+You can change the data sheet selection and edit the data sheet contents without stopping the tweeting. 
+
+![Editing column](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/editing%20colums.png)
+
+![Columns](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/columns.png)
+
+It will simply use the updated setting whenever it next attempts to send a tweet. You will, however, have to stop and restart the posting if you want to change the timing.
