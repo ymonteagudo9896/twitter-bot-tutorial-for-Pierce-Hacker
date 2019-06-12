@@ -22,7 +22,8 @@ Here is a link to five key takeaways from [Pew Research](https://www.pewresearch
 ## General Setup Instructions
 **I recommend that you create a separate [Gmail](Gmail.com) account for your bot so you can have everything apart from your personal account.**
 
-The following steps are general for any type of bot you want to create. To get started, make a copy of this [Zach's spreadsheet](https://docs.google.com/spreadsheets/d/1Cbg_6pYN04XtDHpDLtxAP3ExQEBL8PYBXBQ1E5_Sq30/copy), then proceed through the steps below.
+The following steps are general for any type of bot you want to create. To get started, make a copy of [Zach's spreadsheet](https://docs.google.com/spreadsheets/d/1Cbg_6pYN04XtDHpDLtxAP3ExQEBL8PYBXBQ1E5_Sq30/copy) and save it in Google drive. It **CAN NOT** be saved on your desk top because it will not work, then proceed through the steps below.
+ 
 ## Tutorial
  
 
@@ -68,41 +69,83 @@ The last step will be is to verify that everything you just did looks correct cl
 
 This application (“app”) is the method that your spreadsheet will use to talk to Twitter. Its possible to use Apps for multiple bots or accounts — in fact, this is how they’re designed — but I like to make one for each bot account so that if one gets suspended the others aren’t necessarily in jeopardy at the same time.
 
-Go to [Twitter Apps](https://developer.twitter.com/en/apps) and hit the “Create New App” button there. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The app’s name needs to be unique, so you can name it the same it based on your bot. Leave the “Callback” field blank for now. If you get an Error message saying that you must first add a mobile phone number to your profile, then you should do that now.
+Go to [Twitter Apps](https://developer.twitter.com/en/apps) and hit the “Create New App” button there. Fill out the form to give your app a name, description, and website. These can be quite simple and can always be changed later. The **App’s name** needs to be unique, so you can name it the same it based on your bot's name, but if you get an error saying that name has bee taken just change it. In the **App discription** just type a short explination of your bot. For the **Website URL** you can use your bots name and just add a ".com" at the end. Leave the **Enable sign in** the box unchecked for now. Leave the **“Callback”** field blank for now.
 
 ![Create twitter app](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/create%20twitter%20app.jpg)
 
+![App details](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/App%20details.png)
+
+You can leave all the other **URLs** blank because its not requiered. For the **Tell us how this app will be used** you can use the same discription that you used before. After that click **Create**.
+
+![Tell us how](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/tell%20us%20how.png)
+
+You will get a **Developer Terms** read the information and click **Create**
+
+![Developer terms](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Developer%20terms.png)
+
 **5. Complete App Setup and Enter Keys into the Spreadsheet**
 
-You App has four tabs: Details, Settings, Keys and Access Tokens, and Permissions. Under Details, make sure that the app’s access level is set to “Read and Write," and if not, change that under the Permissions tab.
+You App has four tabs: **APP Details, Keys and Access Tokens, and Permissions**. Under Details, make sure that the app’s access level is set to “Read and Write," and if not, click edit and change it.
 
-Under the Keys and Access Tokens tab, use the button to “Create my access token.” This will authorize your app to interface with your account. (I know, it seems redundant.)
+![App Permissions](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/App%20permissions.png)
 
-Then, copy and paste the Consumer Key (API Key) and Consumer Secret (API Secret) from that tab into the green cells under Step 3 in your spreadsheet. (Note: The Consumer Key and Secret are not the same thing as the Access Token and Access Secret.)
+Under the Keys and Access Tokens tab, use the button to “**Generate”** This will authorize your app to interface with your account. (I know, it seems redundant.)
 
-![](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Customer%20Key.png)
+![pKey and token](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/keys%20and%20token.png)
+
+Then, copy and paste the Consumer Key (API Key) and Consumer Secret (API Secret) from that tab into the green cells under Step 3 in your spreadsheet. 
+ 
+>Note: The **Consumer API Key** and **Consumer Secret** are not the same thing as the **Access Token** and **Access token Secret**.
+
+![Step 3](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/step%203.png)
 
 **6. Locate your Google Spreadsheet’s “Project Key”**
 
-This is your spreadsheet’s unique ID within Google. To find yours, first open “Tools-> Script Editor…” to bring up the Script Editor. In the Script Editor, open “File-> Project Properties," and locate your “Project key” in the table that you’ll see there. Copy and paste that Project key into the green cell under Step 4.
+This is your spreadsheet’s unique ID within Google. To find yours, first open “Tools-> Script Editor…” to bring up the Script Editor. 
 
-***insert callback url pic***
+![Script editor](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Scrip%20editor.png)
+
+In the Script Editor, open “File-> Project Properties," and locate your “Project key” in the table that you’ll see there. 
+
+![Project properties](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Project%20properties.png)
+
+![Project key](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Project%20key.png)
+
+Copy and paste that Project key into the green cell under Step 4.
+
+![Step 4](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/step%204.png)
 
 **7. Add “Callback” Value to Twitter App**
 
-After completing Step 4, the red cell under Step 5 should automatically change to include your Project key as part of a URL. If not, or if you accidentally delete it, the URL follows a simple formula:
+After completing Step 4, the red cell under Step 5 should automatically change to include your Project key as part of a URL.
 
-	https://script.google.com/macros/d/<YOUR PROJECT KEY>/usercallback
+![Step 5](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/step%205.png)
 
-Go back to your Twitter app’s Settings tab and paste that URL into “Callback URL” field.
+Go back to your Twitter **App's Detail** tab click edit and paste that URL into “Callback URL” field. Also check the **Enable Sign in with Twitter** box.
+
+![Call back](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/CAll%20back%20url.png)
 
 **8. Select a Data Sheet and Generate a Preview of its Output**
 
-Select a data sheet from the drop down under Step 6, and from the “Bot” menu in your Spreadsheet, select “Generate Preview”. (Each of the four options has specific setup instructions below, but they’re all pre-populated with sample content for this setup step.)
+Select a data sheet from the drop down under Step 6, it would be best to **Select from Columns or Rows** for now. If you leave it on **ebooks** you will have a connect issue.
 
-Switch to the “Preview Output” sheet to see 15 sample tweets generated from the selected data sheet. You can edit these data sheets to your own content now, or you can wait until the rest of the setup is complete.Generating this preview will require you to authorize the scripts in this spreadsheet, so you should agree to grant it permission if prompted.
+![Step 6](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/step%206.jpg)
 
-***insert preview output***
+From the **“Bot”** menu in your Spreadsheet, select **“Generate Preview”**. (Each of the four options has specific setup instructions below, but they’re all pre-populated with sample content for this setup step.)
+
+![Generate preview](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/generate%20preview%20output.png)
+
+At the bottom of the spreadsheet switch to the **“Preview Output”** sheet to see 15 sample tweets generated from the selected data sheet. You can edit these data sheets to your own content now, or you can wait until the rest of the setup is complete. 
+
+![Preview](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/preview%20output.png)
+
+Generating this preview will require you to authorize the scripts in this spreadsheet, so you should agree to grant it permission if prompted.
+
+![Authorization](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/Authorization.png)
+
+At this point youll get a pop-up saying **App isnt verified** justr click on **Advance** and the on **Go to Copy of Bot (unsafe)** and on the next pop-up **Allow**. Don't worry you computer will not blow up on you.It is need so the spreadsheet can talk to your twitter bot.
+
+![Warning](https://raw.githubusercontent.com/ymonteagudo9896/twitter-bot-tutorial-for-Pierce-Hacker/master/images/waring.png) 
 
 **9. Test Twitter Authorization**
 
